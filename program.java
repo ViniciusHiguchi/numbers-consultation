@@ -5,11 +5,9 @@ public class Teste
 	public static void main (String[] args)
 	{
 		
-		int pares[],mult[],primos[],i=0,h=0,num=0;
+		int pares,mult,primos[],i=0,h=0,num=0;
 		char again;
        
-       pares = new int[51];
-       mult = new int[21];
        primos = new int[26];
        Scanner input = new Scanner (System.in);
        do
@@ -45,20 +43,17 @@ public class Teste
        } 
        if(h == 2)
        {
-       h=0;
+    	   h = 0;
+    	   System.out.printf("digite a quantidade de multiplos de cinco que voce quer consultar\n\n");
+           h = input.nextInt();
        do
        {
+    	   mult = 0;
     	   i = i + 1;
-    	   mult[i] = 5 * i;
+    	   mult = 5 * i;
+    	   System.out.printf("%d \n",mult);
        }
-       while(i != 20);
-       System.out.printf("digite de 1 a 20 a quantidade de multiplos de cinco que voce quer consultar\n\n");
-       h = input.nextInt();
-       do
-       {
-    	   num = num + 1;
-    	   System.out.printf("\n %d",mult[num]);   
-       }
+       while(i != h);
        while(h != num);
        }
        
@@ -67,20 +62,17 @@ public class Teste
               
        if(h==3)
        {
+    	    h=0;
+    	    System.out.printf("digite a quantidade de numeros pares que voce quer consultar\n\n");
+    	    h = input.nextInt();
        do
        {
+    	   pares = 0;
     	   i = i + 1;
-    	   pares[i] = 2 * i;
+    	   pares = 2 * i;
+    	   System.out.printf("%d \n",pares);
        }
-       while(i != 50);
-       System.out.printf("digite de 1 a 50 a quantidade de numeros pares que voce quer consultar\n\n");
-       h = input.nextInt();
-       do
-       {
-    	   num = num + 1;
-    	   System.out.printf("\n %d",pares[num]);   
-       }
-       while(h != num);
+       while(i != h);
        }
        
        System.out.printf("\n\nquer fazer outra consulta? s/n\n");
