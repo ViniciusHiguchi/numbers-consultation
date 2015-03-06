@@ -35,10 +35,9 @@ public class Teste
 	public static void main (String[] args)
 	{
 		
-		int pares,mult,primos[],i=0,h=0,num=0;
+		int pares,mult,i=0,h=0,num=0;
 		char again;
        
-       primos = new int[26];
        Scanner input = new Scanner (System.in);
        do
        {
