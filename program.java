@@ -2,6 +2,36 @@ package teste;
 import java.util.*;
 public class Teste
 {
+    public static void primos (String[] args)
+    {
+    	 float n=0,cont=0,i=0,h=0,o=0;
+    	 Scanner input = new Scanner (System.in);
+    	 System.out.printf("entre um numero para calcular os primos até ele \n\n");
+    	 h = input.nextFloat();
+    	 do
+    	 {
+    		 i = 0;
+    		 do
+    		 {
+    			 i=i+1;
+    			 if(o%i == n)
+    			 {
+    				 cont = cont + 1;
+    			 }	 
+    		 }	 
+    		 while(i < h+1);
+    		 if(cont == 2)
+    		 {
+    			System.out.printf("%.0f \n",o); 
+    		 }
+    		 else
+    		 {}
+    		 o = o + 1;  	     
+    		 cont = 0;
+    	 }
+         while(o < h+1);
+    }
+	
 	public static void main (String[] args)
 	{
 		
@@ -17,29 +47,7 @@ public class Teste
        
        if(h == 1)
        {
-       h=0;
-       primos[1] = 2; primos[2]=3;
-       primos[3] = 5; primos[4]=7;
-       primos[5] = 11; primos[6]=13;
-       primos[7] = 17; primos[8]=19;
-       primos[9] = 23; primos[10]=29;
-       primos[11] = 31; primos[12]=37;              
-       primos[13] = 41; primos[14]=43;
-       primos[15] = 47; primos[16]=53;
-       primos[17] = 59; primos[18]=61;
-       primos[19] = 67; primos[20]=71;
-       primos[21] = 73; primos[22]=79;
-       primos[23] = 83; primos[24]=89; primos[25] = 97;
-       
-       System.out.printf("digite de 1 a 25 a quantidade de numeros primos que voce quer consultar\n\n");
-       h = input.nextInt();
-       do
-       {
-    	   num = num + 1;
-    	   System.out.printf("\n %d",primos[num]);
-    	   
-       }
-       while(h != num);
+          primos(args);
        } 
        if(h == 2)
        {
