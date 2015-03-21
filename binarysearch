@@ -15,17 +15,17 @@ public class Test
     posicao = new int[x];
     for(int i = 1; i < 10;i++)
     {
-    	posicao[i] =  i*1;
+    	posicao[i] = i*1;
     }
     
     System.out.printf("digite um numero para a busca\n");
     busca = input.nextInt();
  
-    primeiro  = 0;
+    primeiro = 0;
     ultimo   = x - 1;
     meio = (primeiro + ultimo)/2;
  
-    while(primeiro <= ultimo)
+    while(primeiro < ultimo)
     {
       if (posicao[meio] < busca)
       {
