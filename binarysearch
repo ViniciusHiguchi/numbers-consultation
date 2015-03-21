@@ -22,7 +22,7 @@ public class Test
     busca = input.nextInt();
  
     primeiro = 0;
-    ultimo   = x - 1;
+    ultimo = x - 1;
     meio = (primeiro + ultimo)/2;
  
     while(primeiro < ultimo)
